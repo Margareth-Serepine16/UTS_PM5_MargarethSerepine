@@ -34,4 +34,10 @@
         <item name="android:src">@drawable/ellipse_1</item>
         <item name="android:textSize">23sp</item>
     </style>
+    
+    <style name="motivationword">
+        <item name="fontFamily">@font/gentium_book_basic</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>
