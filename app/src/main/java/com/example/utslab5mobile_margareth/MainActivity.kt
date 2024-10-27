@@ -2,6 +2,8 @@ package com.example.utslab5mobile_margareth
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import android.widget.RadioGroup
+import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat

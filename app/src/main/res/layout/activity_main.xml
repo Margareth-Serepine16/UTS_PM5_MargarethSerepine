@@ -8,13 +8,443 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="20dp"
+        android:layout_marginBottom="100dp">
 
+        <ImageView
+            android:id="@+id/tempsoal1"
+            android:src="@drawable/group_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tempsoal2"
+            />
 
+        <TextView
+            android:id="@+id/tv_nomor1"
+            android:text="@string/tv_nomor1"
+            style="@style/nomorsoal"
+            app:layout_constraintTop_toTopOf="@id/tempsoal1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/gambarsoal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_nomor1"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/soal1"
+            android:text="@string/tv_soal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambarsoal1"
+            style="@style/isisoal"
+            android:layout_marginBottom="50dp"/>
+
+        <RadioButton
+            android:id="@+id/asoal1"
+            android:text="@string/tv_asoal1"
+            style="@style/optionbtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal1"
+            app:layout_constraintEnd_toStartOf="@id/bsoal1"
+            app:layout_constraintTop_toBottomOf="@id/soal1"/>
+
+        <RadioButton
+            android:id="@+id/bsoal1"
+            android:text="@string/tv_bsoal1"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/asoal1"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal1"
+            app:layout_constraintTop_toBottomOf="@id/soal1"/>
+
+        <RadioButton
+            android:id="@+id/csoal1"
+            android:text="@string/tv_csoal1"
+            style="@style/optionbtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal1"
+            app:layout_constraintEnd_toStartOf="@id/dsoal1"
+            app:layout_constraintTop_toBottomOf="@id/asoal1"/>
+
+        <RadioButton
+            android:id="@+id/dsoal1"
+            android:text="@string/tv_dsoal1"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/csoal1"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal1"
+            app:layout_constraintTop_toBottomOf="@id/bsoal1"/>
+
+        <ImageView
+            android:id="@+id/tempsoal2"
+            android:src="@drawable/group_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tempsoal1"
+            />
+
+        <TextView
+            android:id="@+id/tv_nomor2"
+            android:text="@string/tv_nomor2"
+            style="@style/nomorsoal"
+            app:layout_constraintTop_toTopOf="@id/tempsoal2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/gambarsoal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download__1__1"
+            app:layout_constraintTop_toBottomOf="@id/tv_nomor2"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/soal2"
+            android:text="@string/tv_soal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambarsoal2"
+            style="@style/isisoal"
+            android:layout_marginBottom="50dp"/>
+
+        <RadioButton
+            android:id="@+id/asoal2"
+            android:text="@string/tv_asoal2"
+            style="@style/optionbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal2"
+            app:layout_constraintEnd_toStartOf="@id/bsoal2"
+            app:layout_constraintTop_toBottomOf="@id/soal2"/>
+
+        <RadioButton
+            android:id="@+id/bsoal2"
+            android:text="@string/tv_bsoal2"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/asoal2"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal2"
+            app:layout_constraintTop_toBottomOf="@id/soal2"/>
+
+        <RadioButton
+            android:id="@+id/csoal2"
+            android:text="@string/tv_csoal2"
+            style="@style/optionbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal2"
+            app:layout_constraintEnd_toStartOf="@id/dsoal2"
+            app:layout_constraintTop_toBottomOf="@id/asoal2"/>
+
+        <RadioButton
+            android:id="@+id/dsoal2"
+            android:text="@string/tv_dsoal2"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/csoal2"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal2"
+            app:layout_constraintTop_toBottomOf="@id/bsoal2"/>
+
+        <ImageView
+            android:id="@+id/tempsoal3"
+            android:src="@drawable/group_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tempsoal2"
+            />
+
+        <TextView
+            android:id="@+id/tv_nomor3"
+            android:text="@string/tv_nomor3"
+            style="@style/nomorsoal"
+            app:layout_constraintTop_toTopOf="@id/tempsoal3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/gambarsoal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download__2__1"
+            app:layout_constraintTop_toBottomOf="@id/tv_nomor3"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/soal3"
+            android:text="@string/tv_soal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambarsoal3"
+            style="@style/isisoal"
+            android:layout_marginBottom="50dp"/>
+
+        <RadioButton
+            android:id="@+id/asoal3"
+            android:text="@string/tv_asoal3"
+            style="@style/optionbtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal3"
+            app:layout_constraintEnd_toStartOf="@id/bsoal3"
+            app:layout_constraintTop_toBottomOf="@id/soal3"/>
+
+        <RadioButton
+            android:id="@+id/bsoal3"
+            android:text="@string/tv_bsoal3"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/asoal3"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal3"
+            app:layout_constraintTop_toBottomOf="@id/soal3"/>
+
+        <RadioButton
+            android:id="@+id/csoal3"
+            android:text="@string/tv_csoal3"
+            style="@style/optionbtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal3"
+            app:layout_constraintEnd_toStartOf="@id/dsoal3"
+            app:layout_constraintTop_toBottomOf="@id/asoal3"/>
+
+        <RadioButton
+            android:id="@+id/dsoal3"
+            android:text="@string/tv_dsoal3"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/csoal3"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal3"
+            app:layout_constraintTop_toBottomOf="@id/bsoal3"/>
+
+        <ImageView
+            android:id="@+id/tempsoal4"
+            android:src="@drawable/group_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tempsoal3"
+            />
+
+        <TextView
+            android:id="@+id/tv_nomor4"
+            android:text="@string/tv_nomor4"
+            style="@style/nomorsoal"
+            app:layout_constraintTop_toTopOf="@id/tempsoal4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/gambarsoal4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/a_complete_beginners_guide_to_beitou_hot_spring_in_taiwan_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_nomor4"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/soal4"
+            android:text="@string/tv_soal4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambarsoal4"
+            style="@style/isisoal"
+            android:layout_marginBottom="50dp"/>
+
+        <RadioButton
+            android:id="@+id/asoal4"
+            android:text="@string/tv_asoal4"
+            style="@style/optionbtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal4"
+            app:layout_constraintEnd_toStartOf="@id/bsoal4"
+            app:layout_constraintTop_toBottomOf="@id/soal4"/>
+
+        <RadioButton
+            android:id="@+id/bsoal4"
+            android:text="@string/tv_bsoal4"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/asoal4"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal4"
+            app:layout_constraintTop_toBottomOf="@id/soal4"/>
+
+        <RadioButton
+            android:id="@+id/csoal4"
+            android:text="@string/tv_csoal4"
+            style="@style/optionbtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal4"
+            app:layout_constraintEnd_toStartOf="@id/dsoal4"
+            app:layout_constraintTop_toBottomOf="@id/asoal4"/>
+
+        <RadioButton
+            android:id="@+id/dsoal4"
+            android:text="@string/tv_dsoal4"
+            style="@style/optionbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/csoal4"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal4"
+            app:layout_constraintTop_toBottomOf="@id/bsoal4"/>
+
+        <ImageView
+            android:id="@+id/tempsoal5"
+            android:src="@drawable/group_41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tempsoal4"
+            />
+
+        <TextView
+            android:id="@+id/tv_nomor5"
+            android:text="@string/tv_nomor5"
+            style="@style/nomorsoal"
+            app:layout_constraintTop_toTopOf="@id/tempsoal5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/gambarsoal5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download__3__1"
+            app:layout_constraintTop_toBottomOf="@id/tv_nomor5"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/soal5"
+            android:text="@string/tv_soal5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gambarsoal5"
+            style="@style/isisoal"
+            android:layout_marginBottom="50dp"/>
+
+        <RadioButton
+            android:id="@+id/asoal5"
+            android:text="@string/tv_asoal5"
+            style="@style/optionbtn"
+            android:layout_width="165dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal5"
+            app:layout_constraintEnd_toStartOf="@id/bsoal5"
+            app:layout_constraintTop_toBottomOf="@id/soal5"/>
+
+        <RadioButton
+            android:id="@+id/bsoal5"
+            android:text="@string/tv_bsoal5"
+            style="@style/optionbtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="165dp"
+            android:layout_height="38dp"
+            app:layout_constraintStart_toEndOf="@id/asoal5"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal5"
+            app:layout_constraintTop_toBottomOf="@id/soal5"/>
+
+        <RadioButton
+            android:id="@+id/csoal5"
+            android:text="@string/tv_csoal5"
+            style="@style/optionbtn"
+            android:layout_width="165dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/tempsoal5"
+            app:layout_constraintEnd_toStartOf="@id/dsoal5"
+            app:layout_constraintTop_toBottomOf="@id/asoal5"/>
+
+        <RadioButton
+            android:id="@+id/dsoal5"
+            android:text="@string/tv_dsoal5"
+            style="@style/optionbtn"
+            android:layout_marginTop="15dp"
+            android:layout_width="165dp"
+            android:layout_height="38dp"
+            app:layout_constraintStart_toEndOf="@id/csoal5"
+            app:layout_constraintEnd_toEndOf="@id/tempsoal5"
+            app:layout_constraintTop_toBottomOf="@id/bsoal5"/>
+
+        <Button
+            android:id="@+id/finishbtn"
+            android:text="@string/tv_finishbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tempsoal5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            style="@style/button"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

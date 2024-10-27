@@ -4,5 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lime">#CCE8C6</color>
     <color name="navybtn">#3C569D</color>
+    <color name="strongnavyblue">#224282</color>
+    <color name="limeneon">#73FEC2</color>
+    <color name="whiteblue">#F3F6FA</color>
+    <color name="softblue">#A0C5F4</color>
 
 </resources>
