@@ -1,4 +1,45 @@
 <resources>
     <string name="app_name">utslab5mobile_margareth</string>
     <string name="tv_stepstart">"Let's Start the Game!"</string>
+    <string name="tv_startbtn">START</string>
+    <string name="tv_finishbtn">FINISH</string>
+    <string name="tv_congratstxt">Congrats!</string>
+    <string name="tv_motivation1">You did a great job</string>
+    <string name="tv_motivation2">Just keep trying!</string>
+
+    <string name="tv_nomor1">Soal 1</string>
+    <string name="tv_soal1">Kapan perang dunia pertama kali terjadi?</string>
+    <string name="tv_asoal1">1914</string>
+    <string name="tv_bsoal1">1913</string>
+    <string name="tv_csoal1">1911</string>
+    <string name="tv_dsoal1">1912</string>
+
+    <string name="tv_nomor2">Soal 2</string>
+    <string name="tv_soal2">Berapa unsur kimia dalam tabel periodik?</string>
+    <string name="tv_asoal2">101</string>
+    <string name="tv_bsoal2">118</string>
+    <string name="tv_csoal2">127</string>
+    <string name="tv_dsoal2">103</string>
+
+    <string name="tv_nomor3">Soal 3</string>
+    <string name="tv_soal3">Apa pulau terbesar di Asia?</string>
+    <string name="tv_asoal3">Madagaskar</string>
+    <string name="tv_bsoal3">Baffin</string>
+    <string name="tv_csoal3">Papua</string>
+    <string name="tv_dsoal3">Greenland</string>
+
+    <string name="tv_nomor4">Soal 4</string>
+    <string name="tv_soal4">Proses perubahan air menjadi gas disebut?</string>
+    <string name="tv_asoal4">Sublimasi</string>
+    <string name="tv_bsoal4">Kondensasi</string>
+    <string name="tv_csoal4">Kristalisasi</string>
+    <string name="tv_dsoal4">Evaporasi</string>
+
+    <string name="tv_nomor5">Soal 5</string>
+    <string name="tv_soal5">Siapa ilmuwan penemu hukum gravitasi?</string>
+    <string name="tv_asoal5">Albert Einstein</string>
+    <string name="tv_bsoal5">Nikola Tesla</string>
+    <string name="tv_csoal5">Issac Newton</string>
+    <string name="tv_dsoal5">Galieo Galilei</string>
+
 </resources>
