@@ -32,6 +32,7 @@
         <item name="fontFamily">@font/markazi_text</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:src">@drawable/ellipse_1</item>
+        <item name="android:clipToOutline">true</item>
         <item name="android:textSize">23sp</item>
     </style>
     
