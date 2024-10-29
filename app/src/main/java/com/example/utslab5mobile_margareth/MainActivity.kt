@@ -13,6 +13,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+    // Declare variables to store answers
+    private var soal1Answer: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,13 +46,13 @@ class MainActivity : AppCompatActivity() {
         val bSoal5 = findViewById<RadioButton>(R.id.bsoal5)
         val cSoal5 = findViewById<RadioButton>(R.id.csoal5)
         val dSoal5 = findViewById<RadioButton>(R.id.dsoal5)
-        // Set up click listener for answer buttons
-        setupAnswerClickListener(aSoal1, bSoal1, cSoal1, dSoal1)
-        setupAnswerClickListener(aSoal2, bSoal2, cSoal2, dSoal2)
-        setupAnswerClickListener(aSoal3, bSoal3, cSoal3, dSoal3)
-        setupAnswerClickListener(aSoal4, bSoal4, cSoal4, dSoal4)
-        setupAnswerClickListener(aSoal5, bSoal5, cSoal5, dSoal5)
 
+        // Set up click listener for answer buttons
+        setupAnswerClickListener(aSoal1, bSoal1, cSoal1, dSoal1, correctAnswerId = R.id.asoal1)
+        setupAnswerClickListener(aSoal2, bSoal2, cSoal2, dSoal2, correctAnswerId = R.id.bsoal2)
+        setupAnswerClickListener(aSoal3, bSoal3, cSoal3, dSoal3, correctAnswerId = R.id.csoal3)
+        setupAnswerClickListener(aSoal4, bSoal4, cSoal4, dSoal4, correctAnswerId = R.id.dsoal4)
+        setupAnswerClickListener(aSoal5, bSoal5, cSoal5, dSoal5, correctAnswerId = R.id.csoal5)
 
         // Set up click listener for the finish button
         tv_finishbtn.setOnClickListener {
@@ -75,10 +77,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     // Helper function to set up click listeners for answer buttons
-    private fun setupAnswerClickListener(vararg radioButtons: RadioButton) {
+    private fun setupAnswerClickListener(vararg radioButtons: RadioButton, correctAnswerId: Int = -1) {
         radioButtons.forEach { radioButton ->
             radioButton.setOnClickListener {
-                it.background = ContextCompat.getDrawable(this, R.drawable.button_border_green)
+                if (radioButton.id == correctAnswerId) {
+                    radioButton.background = ContextCompat.getDrawable(this, R.drawable.button_border_green)
+                    if (radioButton.id == R.id.asoal1) {
+                        soal1Answer = true
+                    }
+                } else {
+                    radioButton.background = ContextCompat.getDrawable(this, R.drawable.button_border_red)
+                }
 
                 // Disable all other answer buttons for the same question
                 radioButtons.forEach { otherRadioButton ->
